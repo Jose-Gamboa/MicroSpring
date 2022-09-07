@@ -74,7 +74,7 @@ public class MicroSpring {
             }
             
             String content = "Not Foud";
-            if(pathsMap.containsKey(param.getPath())){
+            if(pathsMap.containsKey(param)){
                 content = (String) pathsMap.get(param.getPath()).invoke(null);
             }
             
