@@ -63,10 +63,12 @@ public class MicroSpring {
 
             String param = null;
             
+            boolean flag = true;
+            
             while ((inputLine = in.readLine()) != null) {
-                if(inputLine.contains("/")){ 
+                if(flag){ 
+                    flag = false;
                     param = inputLine.split(" ")[1];
-                    break;
                 }
                 if (!in.ready()) {
                     break;
